@@ -7,6 +7,9 @@
 html {
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.5;
+  color: #2A2F35;
+  background-color: #f2f2f2;
 }
 
 *, *::before, *::after {
@@ -17,6 +20,187 @@ html {
   text-size-adjust: 100%;
 }
 
+body {
+  margin: 0;
+}
+
+main {
+  margin: 1rem;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: Oswald, sans-serif;
+}
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+.logo-header {
+  width: 200px;
+  padding: 1rem 0 1rem 1rem;
+  margin: 0;
+  display: inline-block;
+}
+
+/* Top navigation */
+
+.nav {
+  display: none;
+  width: 100%;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav a {
+  display: block;
+  color: #2A2F35;
+  padding: .5em;
+  text-decoration: none;
+}
+
+.nav a:hover, .nav a:checked {
+  color: #27528B;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-label {
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 1em;
+  margin-right: 1em;
+  margin-bottom: .5em;
+  background-image: url("../images/nav-icon.png");
+  background-size: 40px auto;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+  width: 100%;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+
+/* Sub Navigation */
+
+ol {
+  padding: 1rem 0;
+}
+
+ol li {
+  list-style: none;
+  padding: .5rem 0;
+}
+
+.btn {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #647C8B;
+  border: 1px solid #647C8B;
+  border-radius: 5px;
+  padding: .5rem;
+  color: #f2f2f2;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+.btn:hover {
+  background-color: #27528B;
+}
+
+/* Figures */
+
+figure {
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+/* Information Sections */
+
+.info-text {
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.hospitalizations {
+  color: #f2f2f2;
+  background-color: #647C8B;
+  padding: 1rem;
+}
+
+.wide-view {
+  display: none;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #DFECF1;
+  padding: 2rem;
+  margin: 0;
+}
+
+.footer-bar {
+  padding: .5rem 0;
+  text-align: center;
+  margin: 0;
+  background-color: #f2f2f2;
+  color: #2A2F35;
+}
+
+@media only screen and (min-width: 38em) {
+
+  ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  ol:last-child {
+    grid-column: 3 / span 3;
+  }
+
 }
