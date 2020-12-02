@@ -19,13 +19,13 @@
           <img class="nav-close img-flex" src="images/close-icon.png" alt="Close Navigation">
         </label>
         <ul class="nav">
-          <li><a class="highlight" href="#">Introduction</a></li>
-          <li><a href="#">The Spectrum of Substance Use</a></li>
-          <li><a href="#">Substance Use in Algoma</a></li>
-          <li><a href="#">Methodology</a></li>
-          <li><a href="#">Findings</a></li>
-          <li><a href="#">Recommendations</a></li>
-          <li><a href="#">Framework</a></li>
+          <li><a class="current" href="index.html">Introduction</a></li>
+          <li><a class="nav-base" href="spectrum-of-use.html">The Spectrum of Substance Use</a></li>
+          <li><a class="nav-base" href="use-in-algoma.html">Substance Use in Algoma</a></li>
+          <li><a class="nav-base" href="#">Methodology</a></li>
+          <li><a class="nav-base" href="#">Findings</a></li>
+          <li><a class="nav-base" href="#">Recommendations</a></li>
+          <li><a class="nav-base" href="#">Framework</a></li>
         </ul>
       </nav>
     </div>
@@ -100,13 +100,47 @@
         <h2>The Cost of Substance Use</h2>
         <p>The overall economic cost of substance use in Canada in 2014 was estimated to be $38.4 billion. This estimate represents a cost of approximately $1,100 for every Canadian regardless of age (CCSA, 2018).</p>
       </div>
-      <div class="the-cost-of-use-img">
-        <figure>
-          <h3>The 2014 Cost Breakdown of Substance Use</h3>
-          <img class="wide-view" src="images/homepage-table-wide.jpg" alt="The 2014 Cost Breakdown of Substance Use">
-          <img class="tall-view" src="images/homepage-table-tall.jpg" alt="The 2014 Cost Breakdown of Substance Use">
-          <h4>*Sault Ste. Marie Population in 2016: 73,368</h4>
-        </figure>
+      <div class="the-cost-of-use-table">
+        <table class="table-wrapper">
+          <caption>
+            <h3>The 2014 Cost Breakdown of Substance Use</h3>
+          </caption>
+          <thead>
+            <th scope="col"></th>
+            <th class="canada-wide" scope="col">Canada Nationwide</th>
+            <th class="sault-wide" scope="col">Sault Ste Marie</th>
+          </thead>
+          <tbody>
+            <tr class="table-grey">
+              <th scope="row">Criminal Justice</th>
+              <td>$9 Billion</td>
+              <td>$18.8 Million</td>
+            </tr>
+            <tr>
+              <th scope="row">Health Care</th>
+              <td>$11.1 Billion</td>
+              <td>$23.4 Million</td>
+            </tr>
+            <tr class="table-grey">
+              <th scope="row">Lost Productivity</th>
+              <td>$15.7 Billion</td>
+              <td>$32.9 Million</td>
+            </tr>
+            <tr>
+              <th scope="row">Other Direct Costs</th>
+              <td>$2.7 Billion</td>
+              <td>$5.6 Million</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="table-grey table-total">
+              <th scope="row">Total</th>
+              <td>$38.4 Billion</td>
+              <td>$80.7 Million</td>
+            </tr>
+          </tfoot>
+        </table>
+        <h4>*Sault Ste. Marie Population in 2016: 73,368</h4>
       </div>
     </article>
   </main>

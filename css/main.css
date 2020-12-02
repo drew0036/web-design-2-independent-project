@@ -46,6 +46,14 @@ img {
 
 /* Top navigation */
 
+.current {
+  color: #27528B;
+}
+
+.nav-base {
+  color: #2A2F35;
+}
+
 .nav {
   display: none;
   width: 100%;
@@ -63,12 +71,11 @@ img {
 
 .nav a {
   display: block;
-  color: #2A2F35;
   padding: .5em;
   text-decoration: none;
 }
 
-.nav a:hover, .nav a:checked {
+.nav a:hover {
   color: #27528B;
 }
 
@@ -174,11 +181,6 @@ figcaption {
     width: 100%;
 }
 
-.wide-view {
-  display: none;
-}
-
-
 /* Footer */
 
 footer {
@@ -193,6 +195,29 @@ footer {
   margin: 0;
   background-color: #f2f2f2;
   color: #2A2F35;
+}
+
+table {
+  margin: 0;
+}
+
+
+th {
+  width: 8em;
+  text-align: left;
+  font-family: Oswald, sans-serif;
+}
+
+.table-grey {
+  background-color: #E5E5E5;
+}
+
+.canada-wide {
+  width: 6em;
+}
+
+.sault-wide {
+  width: 6em;
 }
 
 @media only screen and (min-width: 38em) {
@@ -245,6 +270,36 @@ footer {
 
   .hospitalizations img {
     width: 100%;
+  }
+
+  table {
+    font-size: 150%;
+    margin-bottom: 2rem;
+  }
+
+  .the-cost-of-use-table {
+    margin-bottom: 4rem;
+  }
+
+  .canada-wide {
+    width: 10em;
+  }
+
+  .sault-wide {
+    width: 10em;
+  }
+
+  th {
+    width: 10em;
+  }
+
+  footer img {
+    width: 200px;
+  }
+
+  .footer-content {
+    margin-left: 5rem;
+    max-width: 500px;
   }
 
 }
@@ -350,32 +405,35 @@ footer {
     height: auto;
   }
 
-  .wide-view {
-    display: inline-block;
-  }
-
-  .tall-view {
-    display: none;
-  }
-
   article .the-cost-of-use {
     grid-column: 1;
     grid-row: 7;
   }
 
-  article .the-cost-of-use-img {
+  article .the-cost-of-use-table {
     grid-column: 1 / span 2;
     grid-row: 8;
     margin: 0 10rem;
   }
 
-  footer img {
-    width: 200px;
+  th {
+    width: 12em;
   }
 
-  .footer-content {
-    margin-left: 10rem;
-    max-width: 500px;
+  .canada-wide {
+    width: 12em;
+  }
+
+  .sault-wide {
+    width: 12em;
+  }
+
+  .the-cost-of-use-table h4 {
+    margin-bottom: 4rem;
+  }
+
+  .table-wrapper {
+    overflow: visible;
   }
 
 }
