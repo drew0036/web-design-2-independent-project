@@ -154,6 +154,7 @@ figure {
 
 figcaption {
   font-style: italic;
+  font-size: 80%;
 }
 
 /* Information Sections */
@@ -167,6 +168,10 @@ figcaption {
   color: #f2f2f2;
   background-color: #647C8B;
   padding: 1rem;
+}
+
+  .hospitalizations img {
+    width: 100%;
 }
 
 .wide-view {
@@ -200,8 +205,6 @@ footer {
     right: 4rem;
   }
 
-/* Sub Nav */
-
   ol {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -228,7 +231,20 @@ footer {
   }
 
   .hospitalizations {
+    display: block;
     padding: 2rem;
+  }
+
+  .hospitalizations-text {
+    padding-right: 1rem;
+  }
+
+  .hospitalizations-text  h2 {
+    margin-top: 0;
+  }
+
+  .hospitalizations img {
+    width: 100%;
   }
 
 }
@@ -258,7 +274,8 @@ footer {
   }
 
   ol {
-    margin: 1rem 10rem;
+    margin: 1rem 8rem;
+    font-size: 120%;
   }
 
   h2 {
@@ -316,24 +333,21 @@ footer {
   article .hospitalizations {
     grid-column: 1 / span 2;
     grid-row: 6;
-    }
   }
 
   .hospitalizations {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
+    display: flex;
   }
 
-  .hospitalizations .text {
-    grid-column: 1;
-    grid-row: 1 / span 2;
+  .hospitalizations-text {
+    width: 48rem;
+    margin: 1rem;
+    margin-right: 2rem;
   }
 
-  .hospitalizations img {
-    grid-column: 2;
-    grid-row: 1 / span 2;
+ .hospitalizations img {
+    width: 20%;
+    height: auto;
   }
 
   .wide-view {
