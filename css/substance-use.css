@@ -1,0 +1,185 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.5;
+  color: #2A2F35;
+  background-color: #f2f2f2;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.spectrum-info {
+  background-color: #dfecf1;
+  padding: 2rem;
+}
+
+.spectrum-info h3 {
+  margin: 0;
+}
+
+.spectrum-h3 {
+  display: inline-flex;
+}
+
+.spectrum-h3 img {
+  width: 30px;
+  height: 30px;
+  margin: 0 1rem;
+}
+
+.spectrum-info h1 {
+  font-size: 180%;
+}
+
+.algoma-insights {
+  background-color: #647c8b;
+  margin: 2rem 0;
+  padding: 3rem;
+  color: #f2f2f2;
+}
+
+.algoma-insights-list {
+  font-family: Oswald, sans-serif;
+}
+
+.factors {
+  margin: 2rem 0;
+}
+
+.risk-icon {
+  display: inline-flex;
+}
+
+.risk-icon img {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 0 1rem;
+}
+
+.risk-icon h3 {
+  margin: .5rem 0;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .risk-icon img {
+    max-width: 80px;
+    max-height: 80px;
+    margin: 0 1rem;
+  }
+
+  .risk-icon h3 {
+    margin: 1rem 0;
+    font-size: 140%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: .5rem;
+    row-gap: 0;
+  }
+
+  ol li .btn {
+    height: 100%;
+    text-align: center;
+    align-content: center;
+  }
+
+  ol li:nth-child(3) {
+    grid-column: 1 / 1;
+
+  }
+
+  ol li:last-child {
+    grid-column: 3 / -1;
+    grid-row: 1 / -1;
+
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 3rem;
+  }
+
+  article .spectrum-info {
+    grid-column: 1;
+    grid-row: span 2;
+  }
+
+  article .concurrent-dis {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  article .concurrent-dis-canada {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  article .algoma-insights {
+    grid-column: span 2;
+  }
+
+  .algoma-insights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  article .crowd-img {
+    grid-column: span 2;
+  }
+
+  article .social-determinants {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  article .protective-factors {
+    grid-column: 2;
+    grid-row: 5;
+  }
+
+  article .risk-factors {
+    grid-column: span 2;
+    margin: 0 1rem;
+  }
+
+  article .risk-factors-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+  }
+
+  .risk-factor-list-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .risk-factor-list-2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}

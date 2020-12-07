@@ -1,0 +1,48 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.5;
+  color: #2A2F35;
+  background-color: #f2f2f2;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media only screen and (min-width: 60em) {
+
+  ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: .5rem;
+    row-gap: 0;
+  }
+
+  ol li .btn {
+    height: 100%;
+    text-align: center;
+    align-content: center;
+  }
+
+  ol li:nth-child(3) {
+    grid-column: 1 / 1;
+
+  }
+
+  ol li:last-child {
+    grid-column: 3 / -1;
+    grid-row: 1 / -1;
+
+  }
