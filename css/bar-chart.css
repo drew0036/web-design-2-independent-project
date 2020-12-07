@@ -1,9 +1,39 @@
-.box {
-  fill: limegreen;
-  transform: rotate(45deg);
-  transition: all .25s linear;
+meter::-webkit-meter-bar {
+    background: #FFF;
+    border: 1px solid #CCC;
+    height: 50px;
+    width: 200px;
 }
 
-.box:hover {
-  fill: orange;
+meter::-webkit-meter-optimum-value {
+    background: #000;
+    background: -moz-linear-gradient(top, #000 0%, #000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000), color-stop(100%, #000));
+    background: -webkit-linear-gradient(top, #000 0%, #000 100%);
+    background: -o-linear-gradient(top, #000 0%, #000 100%);
+    background: -ms-linear-gradient(top, #000 0%, #000 100%);
+    background: linear-gradient(to bottom, #000 0%, #000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000', endColorstr='#000',GradientType=0);
+}
+
+.bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.chart {
+  margin: 10rem 10rem;
+}
+
+label {
+  grid-row: 2;
+  width: 10rem;
+  padding: 1rem;
+}
+
+meter {
+  grid-row: 1;
+  margin: 1rem;
+  transform: rotate(270deg);
 }
