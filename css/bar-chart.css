@@ -1,0 +1,9 @@
+.box {
+  fill: limegreen;
+  transform: rotate(45deg);
+  transition: all .25s linear;
+}
+
+.box:hover {
+  fill: orange;
+}

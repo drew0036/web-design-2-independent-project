@@ -20,6 +20,10 @@ html {
   text-size-adjust: 100%;
 }
 
+.use-in-algoma-facts {
+  font-family: Oswald, sans-serif;
+}
+
 @media only screen and (min-width: 60em) {
 
   ol {
