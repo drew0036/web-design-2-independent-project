@@ -3,6 +3,7 @@ meter::-webkit-meter-bar {
     border: 1px solid #CCC;
     height: 50px;
     width: 200px;
+    border-radius: 0px;
 }
 
 meter::-webkit-meter-optimum-value {
@@ -16,24 +17,54 @@ meter::-webkit-meter-optimum-value {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000', endColorstr='#000',GradientType=0);
 }
 
-.bar {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  section {
+    margin: 1rem 3.5rem;
+  }
+
+  .bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  meter {
+    margin-bottom: 2rem;
+  }
+
+@media only screen and (min-width: 38em) {
+
+  .bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  section {
+    margin: 2rem 0;
+    overflow: auto;
+  }
+
+  meter {
+    transform: rotate(270deg);
+    grid-row: 1;
+    align-self: flex-end;
+    width: 50px;
+    margin: 0;
+  }
+
+  label {
+    grid-row: 2;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
 }
 
-.chart {
-  margin: 10rem 10rem;
-}
+@media only screen and (min-width: 60em) {
 
-label {
-  grid-row: 2;
-  width: 10rem;
-  padding: 1rem;
-}
+  section {
+    max-width: 48rem;
+    margin: 2rem auto;
+  }
 
-meter {
-  grid-row: 1;
-  margin: 1rem;
-  transform: rotate(270deg);
 }
