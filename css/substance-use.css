@@ -85,10 +85,6 @@ html {
     font-size: 140%;
   }
 
-}
-
-@media only screen and (min-width: 60em) {
-
   ol {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -113,6 +109,10 @@ html {
     grid-row: 1 / -1;
 
   }
+
+}
+
+@media only screen and (min-width: 60em) {
 
   article {
     display: grid;

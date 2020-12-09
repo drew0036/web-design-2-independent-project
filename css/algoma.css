@@ -53,40 +53,45 @@ meter::-webkit-meter-optimum-value {
     margin-bottom: 2rem;
   }
 
+.use-in-algoma-text {
+  margin-top: 2rem;
+}
+
 .use-in-algoma-facts {
+  font-family: Oswald, sans-serif;
+  margin: 3rem .5rem;
+}
+
+.margin-bottom-zero {
+  margin-bottom: 0;
+}
+
+.margin-bottom-top {
+  margin-top: 0;
+}
+
+.div-space {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.informant-insights-quote {
   font-family: Oswald, sans-serif;
 }
 
-@media only screen and (min-width: 38em) {
-
-  .bar {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  section {
-    margin: 2rem 0;
-    overflow: auto;
-  }
-
-  meter {
-    transform: rotate(270deg);
-    grid-row: 1;
-    align-self: flex-end;
-    width: 50px;
-    margin: 0;
-  }
-
-  label {
-    grid-row: 2;
-    padding: 1rem;
-    margin-top: 1rem;
-  }
-
+.informant-statements-imgs img {
+  margin: 3rem 0;
 }
 
-@media only screen and (min-width: 60em) {
+.image-one {
+  display: none;
+}
+
+.image-three {
+  display: none;
+}
+
+@media only screen and (min-width: 38em) {
 
   ol {
     display: grid;
@@ -110,7 +115,95 @@ meter::-webkit-meter-optimum-value {
     grid-row: span 2;
   }
 
+  .bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  section {
+    margin: 2rem 0;
+    overflow: auto;
+  }
+
+  meter {
+    transform: rotate(270deg);
+    grid-row: 1;
+    align-self: flex-end;
+    width: 50px;
+    margin: 0;
+  }
+
+  .bar-label {
+    grid-row: 2;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
   section {
     max-width: 48rem;
     margin: 2rem auto;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 3rem;
+  }
+
+  article .use-in-algoma {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  article .use-in-algoma-facts {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  article section {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+
+  article .algoma-critical-insights {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  article .youth-cannabis-use {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  article .pregnancy-use {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  article .blood-borne {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  article .page-three-img {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+  }
+
+  article .informant-insights {
+    grid-row: 7;
+  }
+
+  article .informant-statements {
+    grid-row: 8;
+  }
+
+  article .informant-statements-imgs {
+    grid-row: 9;
   }
