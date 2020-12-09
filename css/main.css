@@ -9,7 +9,6 @@ html {
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.5;
   color: #000;
-  background-color: #f2f2f2;
 }
 
 *, *::before, *::after {
@@ -26,6 +25,7 @@ body {
 
 main {
   margin: 1rem;
+  background-color: #f2f2f2;
 }
 
 h1, h2, h3, h4, h5 {
@@ -166,9 +166,9 @@ figcaption {
 
 /* Footer */
 
-.footer-section {
+footer {
   background-color: #dfecf1;
-  padding: 2rem;
+  padding: 1rem 0;
 }
 
 .footer-bar {
@@ -193,8 +193,8 @@ figcaption {
     width: 200px;
   }
 
-  .footer-content {
-    margin-left: 5rem;
+  .footer-section {
+    padding: 2rem 5rem;
     max-width: 500px;
   }
 
@@ -233,8 +233,8 @@ figcaption {
     margin-top: 0;
   }
 
-  .footer-text {
-    margin: 0 10rem;
+  .footer-section {
+    padding: 2rem 2rem 2rem 0;
   }
 
 }
