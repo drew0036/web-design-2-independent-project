@@ -8,7 +8,7 @@ html {
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.5;
-  color: #2a2f35;
+  color: #000;
   background-color: #f2f2f2;
 }
 
@@ -138,8 +138,8 @@ ol li {
 .btn {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #647c8b;
-  border: 1px solid #647c8b;
+  background-color: #2d536b;
+  border: 1px solid #2d536b;
   border-radius: 5px;
   padding: .5rem;
   color: #f2f2f2;
@@ -166,10 +166,9 @@ figcaption {
 
 /* Footer */
 
-footer {
+.footer-section {
   background-color: #dfecf1;
   padding: 2rem;
-  margin: 0;
 }
 
 .footer-bar {
@@ -232,6 +231,10 @@ footer {
 
   h2 {
     margin-top: 0;
+  }
+
+  .footer-text {
+    margin: 0 10rem;
   }
 
 }
