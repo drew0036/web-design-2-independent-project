@@ -83,12 +83,23 @@ meter::-webkit-meter-optimum-value {
   margin: 3rem 0;
 }
 
-.image-one {
+.image-one, .image-three {
   display: none;
 }
 
-.image-three {
-  display: none;
+.four-in-ten {
+  font-size: 200%;
+  margin-bottom: .25rem;
+}
+
+.informant-statements p {
+  margin: 3rem 2rem 3rem 1rem;
+  font-size: 110%;
+}
+
+.informant-statements h3 {
+  margin: 1.5rem 1rem 1.5rem .5rem;
+  font-size: 140%;
 }
 
 @media only screen and (min-width: 38em) {
@@ -118,7 +129,7 @@ meter::-webkit-meter-optimum-value {
   .bar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 250px 100px;
   }
 
   section {
@@ -147,63 +158,104 @@ meter::-webkit-meter-optimum-value {
   section {
     max-width: 48rem;
     margin: 2rem auto;
+    overflow: visible;
   }
 
-  article {
+  .use-in-algoma {
     display: grid;
+    grid-template-rows: 300px 400px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 3rem;
+    gap: 1rem;
+    margin: 2rem 0;
   }
 
-  article .use-in-algoma {
+  .use-in-algoma .use-in-algoma-text {
     grid-column: 1;
     grid-row: 1;
   }
 
-  article .use-in-algoma-facts {
-    grid-column: 1;
+  .use-in-algoma .use-in-algoma-facts {
+    grid-column: 2;
     grid-row: 1;
   }
 
-  article section {
+  .use-in-algoma section {
     grid-column: 1 / span 2;
     grid-row: 2;
   }
 
-  article .algoma-critical-insights {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  .content .algoma-critical-insights {
     grid-column: 1;
     grid-row: 3;
   }
 
-  article .youth-cannabis-use {
+  .content .youth-cannabis-use {
     grid-column: 2;
     grid-row: 3;
   }
 
-  article .pregnancy-use {
+  .content .pregnancy-use {
     grid-column: 1;
     grid-row: 4;
   }
 
-  article .blood-borne {
+  .content .blood-borne {
     grid-column: 2;
     grid-row: 4;
   }
 
-  article .page-three-img {
+  .content .page-three-img {
     grid-column: 1 / span 2;
     grid-row: 6;
   }
 
-  article .informant-insights {
+  .content .informant-insights {
+    grid-column: 1 / span 2;
     grid-row: 7;
   }
 
-  article .informant-statements {
+  .content .informant-statements {
+    grid-column: 1;
     grid-row: 8;
   }
 
-  article .informant-statements-imgs {
-    grid-row: 9;
+  .content .informant-statements-imgs {
+    grid-column: 2;
+    grid-row: 8;
+  }
+
+  .image-one, .image-three {
+    display: block;
+  }
+
+  .informant-statements-imgs img {
+    margin: 2rem;
+    width: 80%;
+  }
+
+  .informant-statements-imgs {
+    margin-top: 5rem;
+  }
+
+  .informant-statements {
+    margin-top: 5rem;
+  }
+
+  .informant-insights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .informant-insights-quote {
+    margin-top: 0;
+    margin-left: 2rem;
+    font-size: 120%;
   }
