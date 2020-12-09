@@ -184,6 +184,10 @@ footer {
   padding: 1rem 0;
 }
 
+.footer-section {
+  padding: 1rem;
+}
+
 .footer-bar {
   padding: .5rem 0;
   text-align: center;
