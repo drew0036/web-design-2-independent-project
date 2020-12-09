@@ -4,14 +4,18 @@
   <meta charset="utf-8">
   <title>SMM & Area Drug Strategy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="favicon.ico" rel="shortcut icon">
+  <link href="favicon.ico" rel="icon" type="image/png">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/intro.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Sans+Pro:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <ul class="skip-links">
+    <li><a href="#main" aria-label="Skip to the main content">Skip to the main content</a></li>
+    <li><a href="#nav" aria-label="Skip to navigation">Skip to navigation</a></li>
+  </ul>
+  <header role="banner">
     <img class="logo-header" src="images/logo.png" alt="logo reads S S M and area drug strategy">
     <div>
       <nav role="navigation" id="nav" tabindex="0">
@@ -33,7 +37,7 @@
     </div>
     <img src="images/banner-homepage.jpg" alt="Graffitti of hearts painted on a wall on Gore Street">
   </header>
-  <main>
+  <main role="main" id="main" tabindex="0">
     <ol class="page-nav-1">
       <li><a class="btn btn-1" href="#hp-intro">Introduction</a></li>
       <li><a class="btn btn-2" href="#escalaing-fentanyl-crisis">The Escalating Fentanyl Crisis</a></li>
