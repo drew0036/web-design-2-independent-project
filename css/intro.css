@@ -191,8 +191,8 @@ th {
   }
 
  .hospitalizations img {
-    width: 20%;
-    height: auto;
+    width: 50%;
+    height: 100%;
   }
 
   article .the-cost-of-use {
@@ -224,15 +224,6 @@ th {
 
   .table-wrapper {
     overflow: visible;
-  }
-
-}
-
-@media only screen and (min-width: 90em) {
-
-  .hospitalizations img {
-
-    margin-left: 8rem;
   }
 
 }
