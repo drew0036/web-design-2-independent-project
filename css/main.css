@@ -210,7 +210,7 @@ footer {
   font-size: 1rem;
   border: none;
   outline: none;
-  background-color: #f79b47;
+  background-color: #d56b0b;
   color: #fff;
   cursor: pointer;
   padding: .5rem 1rem;
@@ -219,7 +219,7 @@ footer {
 }
 
 .mybtn:hover {
-  background-color: #d2da52;
+  background-color: #2da729;
 }
 
 @media only screen and (min-width: 38em) {
