@@ -45,6 +45,11 @@ h1, h2, h3, h4, h5 {
   font-family: Oswald, sans-serif;
 }
 
+h1 {
+  font-size: 250%;
+  margin-top: 0;
+}
+
 img {
   display: flex;
   width: 100%;
@@ -198,6 +203,10 @@ footer {
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    font-size: 110%;
+  }
+
   header, main {
     margin: 0 5rem;
   }
@@ -211,13 +220,17 @@ footer {
   }
 
   .footer-section {
-    padding: 2rem 5rem;
-    max-width: 500px;
+    width: 500px;
+    margin: 0 5rem;
   }
 
 }
 
 @media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+  }
 
   .nav-open,
   .nav-close {
@@ -248,6 +261,27 @@ footer {
 
   h2 {
     margin-top: 0;
+  }
+
+  .footer-section {
+    width: 800px;
+    margin: 0 10rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  header, main {
+    margin: 0 10rem;
+  }
+
+  .footer-section {
+    margin: 0 20rem;
   }
 
 }

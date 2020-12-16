@@ -37,6 +37,7 @@ html {
 
 table {
   margin: 0;
+  width: 100%;
 }
 
 th {
@@ -202,7 +203,7 @@ th {
   article .the-cost-of-use-table {
     grid-column: 1 / span 2;
     grid-row: 8;
-    margin: 0 10rem;
+    margin: 0 5rem;
   }
 
   th {
@@ -223,6 +224,15 @@ th {
 
   .table-wrapper {
     overflow: visible;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .hospitalizations img {
+
+    margin-left: 8rem;
   }
 
 }
