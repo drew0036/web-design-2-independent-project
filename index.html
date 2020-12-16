@@ -39,6 +39,7 @@
     <img src="images/banner-homepage.jpg" alt="Graffitti of hearts painted on a wall on Gore Street">
   </header>
   <main role="main" id="main" tabindex="0">
+    <button onclick="topFunction()" class=".myBtn" id="myBtn" title="Go to top">Top</button>
     <ol class="page-nav-1">
       <li><a class="btn btn-1" href="#hp-intro">Introduction</a></li>
       <li><a class="btn btn-2" href="#escalaing-fentanyl-crisis">The Escalating Fentanyl Crisis</a></li>
@@ -166,5 +167,26 @@
       <small>Web Design by Holly Drew</small>
     </div>
   </footer>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </body>
 </html>

@@ -34,6 +34,7 @@
     <img src="images/banner-page2.jpg" alt="overview of the Station Mall parking lot">
   </header>
   <main>
+    <button onclick="topFunction()" class=".myBtn" id="myBtn" title="Go to top">Top</button>
     <ol class="page-nav-1">
       <li><a class="btn btn-1" href="#spectrum-info">The Spectrum of Substance Use</a></li>
       <li><a class="btn btn-2" href="#algoma-insights">Algoma Community Haelth Insights</a></li>
@@ -188,5 +189,26 @@
       <small>Web Design by Holly Drew</small>
     </div>
   </footer>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </body>
 </html>

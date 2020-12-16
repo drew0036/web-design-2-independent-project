@@ -37,7 +37,7 @@ body {
 }
 
 main {
-  margin: 1rem;
+  margin: 1rem 2rem;
   background-color: #f2f2f2;
 }
 
@@ -199,6 +199,26 @@ footer {
   margin: 0;
   background-color: #f2f2f2;
   color: #2a2f35;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #2d536b;
+  color: #fff;
+  cursor: pointer;
+  padding: .5rem 1rem;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #27528b;
 }
 
 @media only screen and (min-width: 38em) {

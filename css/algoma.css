@@ -47,6 +47,8 @@ meter::-webkit-meter-optimum-value {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   meter {
