@@ -34,7 +34,7 @@
     <img src="images/banner-page3.jpg" alt="Graffitti of hearts painted on a wall on Gore Street">
   </header>
   <main>
-    <button onclick="topFunction()" class=".myBtn" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" class="mybtn" id="mybtn" title="Go to top">Top</button>
     <ol class="page-nav-1">
       <li><a class="btn btn-1" href="#use-in-algoma">Substance use in Algoma</a></li>
       <li><a class="btn btn-2" href="#pregnancy-use">Substance Use During Pregnancy</a></li>
@@ -44,6 +44,7 @@
       <li><a class="btn btn-6" href="#informant-statements">Informant Interview Statements</a></li>
       <li><a class="btn btn-7" href="#youth-cannabis-use">Youth Canabis Use in Algoma</a></li>
     </ol>
+    <a class="mybtn" href="#">Top</a>
     <article class="bar-chart">
       <div class="use-in-algoma" id="use-in-algoma">
         <div class="use-in-algoma-text">
@@ -160,26 +161,5 @@
       <small>Web Design by Holly Drew</small>
     </div>
   </footer>
-  <script>
-    //Get the button
-    var mybutton = document.getElementById("myBtn");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
 </body>
 </html>

@@ -201,8 +201,8 @@ footer {
   color: #2a2f35;
 }
 
-#myBtn {
-  display: none;
+.mybtn {
+  display: block;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -210,15 +210,16 @@ footer {
   font-size: 1rem;
   border: none;
   outline: none;
-  background-color: #2d536b;
+  background-color: #f79b47;
   color: #fff;
   cursor: pointer;
   padding: .5rem 1rem;
   border-radius: 4px;
+  text-decoration: none;
 }
 
-#myBtn:hover {
-  background-color: #27528b;
+.mybtn:hover {
+  background-color: #d2da52;
 }
 
 @media only screen and (min-width: 38em) {
